@@ -1,127 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="dist/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harris Nguyen</title>
+    <link rel="stylesheet" href="dist/output.css" />
     <script src="./js/script.js" defer></script>
-</head>
+  </head>
 
-<body class="text-center">
-    <header class="flex text-white bg-darkBlue flex-col p-6">
-        <div class="flex items-center justify-between mb-20">
-            <a href="#"><img src="img/logo-test-hn.png" class="h-20" alt=""></a>
-            <nav class="flex space-x-6">
-                <a class="hidden md:block" href="#projects">Projects</a>
-                <a class="hidden md:block" href="#bg-info">Info</a>
-                <a class="hidden md:block" href="#footer">Contact</a>
-                <button id="menu-btn" class=" block hamburger md:hidden focus:outline-none ">
-                    <span class="hamburger-top"></span>
-                    <span class="hamburger-middle"></span>
-                    <span class="hamburger-bottom"></span>
-                </button>
-            </nav>
+  <body class="text-center">
+    <header class="flex flex-col bg-darkBlue p-6 text-white">
+      <div class="mb-20 flex items-center justify-between">
+        <a href="#"><img src="img/logo-test-hn.png" class="h-20" alt="" /></a>
+        <nav class="flex space-x-6">
+          <a class="hidden md:block" href="#projects">Projects</a>
+          <a class="hidden md:block" href="#bg-info">Info</a>
+          <a class="hidden md:block" href="#footer">Contact</a>
+          <button
+            id="menu-btn"
+            class="hamburger block focus:outline-none md:hidden"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </nav>
+      </div>
+      <div
+        id="menu"
+        class="absolute left-6 right-6 mt-16 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold text-black drop-shadow-md sm:w-auto sm:self-center md:hidden"
+      >
+        <a href="#projects">Projects</a>
+        <a href="#bg-info">Info</a>
+        <a href="#footer">Contact</a>
+      </div>
+      <div class="flex flex-col items-center justify-between space-y-10">
+        <!-- <img src="./images/placeholder-1.jpg" /> -->
+        <div class="text">
+          <h1 class="text-4xl font-bold">Hello there! It's me, Harris.</h1>
+          <p>
+            I'm an aspiring full-stack developer. Feel free to check out my work
+            as well as my background information below.
+          </p>
         </div>
-        <div id="menu" class="absolute flex-col items-center hidden self-end 
-        py-8 mt-16 space-y-6 font-bold bg-white text-black 
-        sm:w-auto sm:self-center left-6 right-6 drop-shadow-md md:hidden">
-            <a href="#projects">Projects</a>
-            <a href="#bg-info">Info</a>
-            <a href="#footer">Contact</a>
+        <div>
+          <button
+            class="baseline w-32 rounded-md bg-blue-600 p-3 px-5 pt-2 text-white hover:bg-blue-700"
+          >
+            <a href="https://github.com/hainx1610" target="_blank">Github</a>
+          </button>
+          <button
+            class="baseline w-32 rounded-md bg-blue-600 p-3 px-5 pt-2 text-white hover:bg-blue-700"
+          >
+            <a
+              href="https://drive.google.com/file/d/1nyrcDtSTlbfxc8QOMpKxvVgQ7qOLMuxO"
+              target="_blank"
+              >My Resumé</a
+            >
+          </button>
         </div>
-        <div class="flex flex-col justify-between items-center space-y-10">
-            <!-- <img src="./images/placeholder-1.jpg" /> -->
-            <div class="text">
-                <h1 class="text-4xl font-bold">Hello there! It's me, Harris.</h1>
-                <p>
-                    I'm an aspiring full-stack developer. Feel free to check out my work
-                    as well as my background information below.
-                </p>
-            </div>
-            <div>
-                <button class="w-32 p-3 px-6 pt-2 text-white bg-blue-600 
-                rounded-md baseline hover:bg-blue-700">
-                    <a href="https://github.com/hainx1610">Github</a>
-                </button>
-                <button class="w-32 p-3 px-6 pt-2 text-white bg-blue-600 
-                rounded-md baseline hover:bg-blue-700">
-                    <a href="https://www.linkedin.com/in/hai-nguyen-5b7000195/">LinkedIn</a>
-                </button>
-            </div>
-        </div>
+      </div>
     </header>
 
     <section id="projects">
-        <h2 class="text-4xl font-bold text-veryDarkBlue mt-10">Projects</h2>
-        <div class="flex flex-col items-center">
-            <div class="flex flex-col items-center space-y-3 my-6 mx-3 md:flex-row md:w-[90vw] ">
-                <figure class="flex flex-col items-center">
-                    <img class="max-w-xs md:w-[40%]" src="./img/image-1.png" />
-                    <figcaption class="font-bold">Rock, Paper, Scissors</figcaption>
-                </figure>
-                <div class="md:w-[60%] text-left">
-                    Play a simple game of Rock, Paper, Scissors with the computer.
-                </div>
-            </div>
-            <div class="flex flex-col items-center space-y-3 my-6 mx-3 md:flex-row md:w-[90vw] ">
-                <figure class="flex flex-col items-center">
-                    <img class="max-w-xs md:w-[40%]" src="./img/image-2.png" />
-                    <figcaption class="font-bold">Etch-a-sketch</figcaption>
-                </figure>
-                <div class="md:w-[60%] text-left">
-                    A classic British-style sketch-pad. Try drawing something with it!
-                </div>
-            </div>
-            <div class="flex flex-col items-center space-y-3 my-6 mx-3 md:flex-row md:w-[90vw] ">
-                <figure class="flex flex-col items-center">
-                    <img class="max-w-xs md:w-[40%]" src="./img/image-3.png" />
-                    <figcaption class="font-bold">Calculator</figcaption>
-                </figure>
-                <div class="md:w-[60%] text-left">
-                    A basic calculator with keyboard support enabled.
-                </div>
-            </div>
+      <h2 class="mt-10 text-4xl font-bold text-veryDarkBlue">Projects</h2>
+      <div class="flex flex-col items-center">
+        <div
+          class="my-6 mx-3 flex flex-col items-center space-y-3 md:w-[90vw] md:flex-row"
+        >
+          <figure>
+            <a
+              href="https://github.com/hainx1610/codercomm-demo"
+              target="_blank"
+              class="flex flex-col items-center"
+            >
+              <img
+                class="mb-3 max-w-xs md:w-[40%]"
+                src="./img/codercomm-logo.png"
+              />
+
+              <figcaption class="font-bold">CoderComm</figcaption>
+            </a>
+          </figure>
+
+          <div class="text-left md:w-[60%]">
+            A social networking platform for people of CoderSchool, but you can
+            join too!
+          </div>
         </div>
+        <div
+          class="my-6 mx-3 flex flex-col items-center space-y-3 md:w-[90vw] md:flex-row"
+        >
+          <figure>
+            <a
+              href="https://github.com/hainx1610/steam-game-shop"
+              target="_blank"
+              class="flex flex-col items-center"
+            >
+              <img
+                class="mb-3 max-w-xs md:w-[40%]"
+                src="./img/steam-info.png"
+              />
+              <figcaption class="font-bold">Steam-info</figcaption>
+            </a>
+          </figure>
+          <div class="text-left md:w-[60%]">
+            A website containing information about video games sold on Steam.
+          </div>
+        </div>
+        <!-- <div
+          class="my-6 mx-3 flex flex-col items-center space-y-3 md:w-[90vw] md:flex-row"
+        >
+          <figure class="flex flex-col items-center">
+            <img class="max-w-xs md:w-[40%]" src="./img/image-3.png" />
+            <figcaption class="font-bold">Calculator</figcaption>
+          </figure>
+          <div class="text-left md:w-[60%]">
+            A basic calculator with keyboard support enabled.
+          </div>
+        </div> -->
+      </div>
     </section>
 
     <section id="bg-info" class="bg-slate-200 p-3">
-        <h2 class="text-4xl font-bold text-veryDarkBlue m-6">
-            Experience & Education
-        </h2>
-        <div class="text-left font-medium mb-3">December 2022 - Now:</div>
-        <p class="font-light italic text-left text-gray-600">
-            Bootcamp Student - Coderschool Vietnam
-        </p>
+      <h2 class="m-6 text-4xl font-bold text-veryDarkBlue">
+        Experience & Education
+      </h2>
+      <div class="mb-2 text-left font-medium">December 2022 - Now:</div>
+      <p class="mb-3 text-left font-light italic text-gray-600">
+        Full-stack Software Engineer - CoderSchool, Vietnam
+      </p>
+      <div class="mb-2 text-left font-medium">August 2013 - August 2018:</div>
+      <p class="mb-3 text-left font-light italic text-gray-600">
+        Bachelor’s Degree - Foreign Trade University, Vietnam
+      </p>
     </section>
 
     <section id="tools" class="flex flex-col p-3">
-        <h2 class="text-4xl font-bold text-veryDarkBlue mt-10 m-6">
-            Languages, Frameworks & Tools
-        </h2>
-        <div class="flex justify-around">
-            <img class="min-w-0 max-w-[100px] h-auto"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-            <img class="min-w-0 max-w-[100px] h-auto"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-            <img class="min-w-0 max-w-[100px] h-auto"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-            <img class="min-w-0 max-w-[100px] h-auto"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-            <img class="min-w-0 max-w-[100px] h-auto"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-            <img class="min-w-0 max-w-[100px] h-auto"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
-        </div>
+      <h2 class="m-6 mt-10 text-4xl font-bold text-veryDarkBlue">
+        Languages, Frameworks & Tools
+      </h2>
+      <div class="flex justify-around space-x-3">
+        <img
+          class="h-auto min-w-0 max-w-[100px]"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        />
+        <img
+          class="h-auto min-w-0 max-w-[100px]"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        />
+        <img
+          class="h-auto min-w-0 max-w-[100px]"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        />
+        <img
+          class="h-auto min-w-0 max-w-[100px]"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+        />
+
+        <img
+          class="h-auto min-w-0 max-w-[100px]"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
+        />
+
+        <img
+          class="h-auto min-w-0 max-w-[100px]"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        />
+
+        <img
+          class="h-auto min-w-0 max-w-[100px]"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+        />
+
+        <img
+          class="h-auto min-w-0 max-w-[100px]"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+        />
+        <img
+          class="h-auto min-w-0 max-w-[100px]"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+        />
+
+        <img
+          class="h-auto min-w-0 max-w-[100px]"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+        />
+
+        <img
+          class="h-auto min-w-0 max-w-[100px]"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+        />
+
+        <img
+          class="h-auto min-w-0 max-w-[100px]"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+        />
+      </div>
     </section>
 
-    <footer id="footer"
-        class="bg-darkBlue text-white flex flex-col items-center p-6 space-x-3 space-y-3 md:flex-row md:justify-between">
-        <div>Tel: +84-0705054594</div>
-        <div>Email: xuanhainguyen.vnjp@gmail.com</div>
+    <footer
+      id="footer"
+      class="flex flex-col items-center space-x-3 space-y-3 bg-darkBlue p-6 text-white md:flex-row md:justify-between"
+    >
+      <div>Tel: +84-0705054594</div>
+      <div>Email: xuanhainguyen.vnjp@gmail.com</div>
     </footer>
-</body>
-
+  </body>
 </html>
